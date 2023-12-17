@@ -1,4 +1,5 @@
 export interface Friends {
-    name: string;
+    name?: string;
     cpf: string;
+    friendsRelated?: string[];
 }

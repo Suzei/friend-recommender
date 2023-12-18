@@ -4,19 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "server": "tsx watch ./src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jest": "^29.5.11",
     "@types/node": "^20.10.4",
     "fastify": "^4.25.1",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.2",
     "zod": "^3.22.4"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
+    "@types/supertest": "^2.0.16",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "eslint": "^8.56.0",
     "eslint-config-standard-with-typescript": "^42.0.0",

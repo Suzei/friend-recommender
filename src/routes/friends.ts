@@ -1,7 +1,4 @@
-import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { z } from "zod";
-import { Friends } from "../interfaces/Friends";
-import { users } from "../server";
+import { FastifyInstance } from "fastify";
 import FriendsController from "../controllers/FriendsController";
 
 

@@ -1,4 +1,4 @@
-import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
+import { FastifyInstance } from "fastify";
 import RelationshipController from "../controllers/RelationshipController";
 
 export async function relationshipRoute(app: FastifyInstance) {

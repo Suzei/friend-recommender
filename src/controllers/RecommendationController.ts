@@ -26,14 +26,15 @@ export default class RecommendationController {
                 user.friendsRelated?.includes(cpf))
                 .flatMap(item => item.friendsRelated);
 
-        const orderedList = suggestedUsers.reduce((count, item) => (count[item] = count[item] + 1 || 1, count), {});
+        // const orderedList = suggestedUsers.reduce((count, item) => (count[item] = count[item] + 1 || 1, count), {});
+
+        // const sortedArray = Object.entries(orderedList).sort((a, b) => a[1] - b[1])
 
         const recommendationList =
             [...new Set(suggestedUsers)]
                 .filter(item => item !== cpf && !userOnParams.includes(item));
 
-        console.log(userOnParams)
-        reply.send(orderedList)
+        reply.send(recommendationList)
 
     }
 }
